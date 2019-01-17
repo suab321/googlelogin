@@ -12,8 +12,8 @@ passport.deserializeUser((id,done)=>{
 })
 passport.use(new google({
     callbackURL:"/google/google_redirect",
-    clientID:"548189625097-thi868ras0kpvdiu722b0g4gi4ktecm7.apps.googleusercontent.com",
-    clientSecret:"PFHFOcVwRoh7InSnEVtekIk6"
+    clientID:"921118557266-dn6ccbp19ojg6np1ulp8ioj6vced6r97.apps.googleusercontent.com",
+    clientSecret:"nsiq3NTEmZjfTtibJpi0A1fV"
 },
 (accessToken,refreshToken,profile,done)=>{
     console.log("accesstoken"+accessToken)
