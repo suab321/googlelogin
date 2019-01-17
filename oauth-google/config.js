@@ -13,7 +13,7 @@ passport.deserializeUser((id,done)=>{
 passport.use(new google({
     callbackURL:"/google/google_redirect",
     clientID:"548189625097-thi868ras0kpvdiu722b0g4gi4ktecm7.apps.googleusercontent.com",
-    clientSecret:"qjMG27T8l9SXqQ4QT1eRe0zZ"
+    clientSecret:"PFHFOcVwRoh7InSnEVtekIk6"
 },
 (accessToken,refreshToken,profile,done)=>{
     console.log("accesstoken"+accessToken)

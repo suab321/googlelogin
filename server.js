@@ -9,4 +9,7 @@ const passport=require('passport');
 app.use(passport.initialize())
 app.use(express.static('views'));
 app.use('/google',router);
+app.get('/',(req,res)=>[
+    res.render('home.html')
+])
 app.listen(process.env.PORT||3002);
