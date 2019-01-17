@@ -9,8 +9,8 @@ router.get('/login',
         prompt: 'consent',
     })
 )
-router.get('/google_redirect',passport.authenticate('google',{failureRedirect:'http://localhost:3002/redirect.html'}),(req,res)=>{
-    res.redirect("http://localhost:3002/redirect.html");
+router.get('/google_redirect',passport.authenticate('google',{failureRedirect:'http://localhost:4200/login/student'}),(req,res)=>{
+    res.redirect("http://localhost:4200/dashboard/university");
 })
 
 module.exports={router};
